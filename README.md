@@ -45,9 +45,9 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 `sender.send_message()`
 
 **Code**
-![](readme files/send_message_code.png)
+![](readme%20files/send_message_code.png)
 **Result**
-![](readme files/send_message_result.png)
+![](readme%20files/send_message_result.png)
 <hr>
 
 `sender.send_text_from_file(split_val=' ')`
@@ -55,9 +55,9 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 **IMPORTANT** split_val can't be empty("")
 
 **Code**
-![](readme files/from_file_code.png)
+![](readme%20files/from_file_code.png)
 **Result**
-![](readme files/from_file_result.png)
+![](readme%20files/from_file_result.png)
 <hr>
 
 `sender.countDown(start=30,finish=1)`
@@ -66,17 +66,17 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 Start has to be more than finish and iterator has to be less than 0
 
 **Code with default iterator**
-![](readme files/countDown_it-1_code.png)
+![](readme%20files/countDown_it-1_code.png)
 **Result with default iterator**
-![](readme files/countDown_it-1_result.png)
+![](readme%20files/countDown_it-1_result.png)
 <hr>
 
 `sender.countDown(start=300, finish=1, it=-60)`
 
 **Code with iterator = -60**
-![](readme files/countDown_it-60_code.png)
+![](readme%20files/countDown_it-60_code.png)
 **Result with iterator = -60**
-![](readme files/countDown_it-60_result.png)
+![](readme%20files/countDown_it-60_result.png)
 <hr>
 
 
