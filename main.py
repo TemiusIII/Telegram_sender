@@ -1,34 +1,11 @@
-import cv2
-from telethon.sync import TelegramClient
+from Sender import Sender
 
+send_id = 12345678 # Insert victim's Telegram id or nickname
+api_id = 212345678  # Your telegram api_id. You can watch it on https://my.telegram.org
+api_hash = 'your_api_hash'  # You can also get it from https://my.telegram.org
 
-class Spammer:
-    def __init__(self, send_id, api_id, api_hash):  # init function will create a session for your telegram account
-        self.client = TelegramClient('name_of_session', api_id, api_hash)  # you can name your session
-        self.send_id = send_id
-        self.client.start()
-        pass
+sender = Sender(send_id, api_id, api_hash)
 
-    def countDown(self, start, finish, it):  # Fun function with count down(you can use it for making some agiotage)
-        for i in range(start, finish - 1, it):
-            self.client.send_message(send_id, "Осталось " + str(i) + ' секунд')
-            cv2.waitKey(-1 * it * 1000)
-
-    def send_message(self, message):  # just casual message sender
-        self.client.send_message(send_id, message)
-
-    def send_text_from_file(self, add_message='',
-                            post_message=''):  # if you want to use this method you should create 'input.txt' file with text
-        text_arr = open("text.txt", 'r').read().split(' ')
-        for i in text_arr:
-            message = add_message + i + post_message
-            self.send_message(message)
-
-
-send_id = ''  # Insert victim's Telegram id or nickname
-api_id = 12345678  # Your telegram api_id. You can watch it on https://my.telegram.org
-api_hash = 'Your api hash'  # You can also get it from https://my.telegram.org
-
-spam = Spammer(send_id, api_id, api_hash)
-
-spam.send_text_from_file()
+sender.countDown(30, 1)
+sender.send_message("Hello")
+sender.send_text_from_file()
