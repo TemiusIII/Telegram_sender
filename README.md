@@ -47,7 +47,7 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 **Code**
 ![alt text](/readme%20files/send_message_code.png?raw=true)
 **Result**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/send_message_result.png)
+![](/readme%20files/send_message_result.png?raw=true)
 <hr>
 
 `sender.send_text_from_file(split_val=' ')`
@@ -55,9 +55,9 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 **IMPORTANT** split_val can't be empty("")
 
 **Code**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/from_file_code.png)
+![](/readme%20files/from_file_code.png?raw=true)
 **Result**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/from_file_result.png)
+![](/readme%20files/from_file_result.png?raw=true)
 <hr>
 
 `sender.countDown(start=30,finish=1)`
@@ -66,17 +66,17 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 Start has to be more than finish and iterator has to be less than 0
 
 **Code with default iterator**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/countDown_it-1_code.png)
+![](/readme%20files/countDown_it-1_code.png?raw=true)
 **Result with default iterator**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/countDown_it-1_result.png)
+![](/readme%20files/countDown_it-1_result.png?raw=true)
 <hr>
 
 `sender.countDown(start=300, finish=1, it=-60)`
 
 **Code with iterator = -60**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/countDown_it-60_code.png)
+![](/readme%20files/countDown_it-60_code.png?raw=true)
 **Result with iterator = -60**
-![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/countDown_it-60_result.png)
+![](/readme%20files/countDown_it-60_result.png?raw=true)
 <hr>
 
 
