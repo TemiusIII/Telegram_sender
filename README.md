@@ -45,7 +45,7 @@ sender.countDown(start=10, finish=1, it=-1)  # countDown method
 `sender.send_message()`
 
 **Code**
-![workpls](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/send_message_code.png?raw=true)
+![alt text](/readme%20files/send_message_code.png?raw=true)
 **Result**
 ![](https://github.com/TemiusIII/Telegram_spammer/tree/main/readme%20files/send_message_result.png)
 <hr>
