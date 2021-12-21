@@ -3,13 +3,13 @@ from telethon.sync import TelegramClient
 
 
 class Spammer:
-    def __init__(self, send_id, api_id, api_hash):
-        self.client = TelegramClient('Tema', api_id, api_hash)
+    def __init__(self, send_id, api_id, api_hash):  # init function will create a session for your telegram account
+        self.client = TelegramClient('name_of_session', api_id, api_hash)  # you can name your session
         self.send_id = send_id
         self.client.start()
         pass
 
-    def countDown(self, start, finish, it): # Fun function with count down(you can use it for making some agiotage)
+    def countDown(self, start, finish, it):  # Fun function with count down(you can use it for making some agiotage)
         for i in range(start, finish - 1, it):
             self.client.send_message(send_id, "Осталось " + str(i) + ' секунд')
             cv2.waitKey(-1 * it * 1000)
